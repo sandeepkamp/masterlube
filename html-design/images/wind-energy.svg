@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 970" width="800" height="970">
+  <defs>
+    <linearGradient id="bgWind" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#232c3a"/>
+      <stop offset="1" stop-color="#0e131c"/>
+    </linearGradient>
+    <linearGradient id="gearBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a8494"/>
+      <stop offset="0.5" stop-color="#454e5c"/>
+      <stop offset="1" stop-color="#232833"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4fd6d6"/>
+      <stop offset="1" stop-color="#1c8a8a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="970" fill="url(#bgWind)"/>
+
+  <!-- large outer gear ring -->
+  <circle cx="430" cy="470" r="300" fill="none" stroke="#3a4250" stroke-width="26"/>
+  <g fill="#3a4250">
+    <circle cx="430" cy="170" r="16"/>
+    <circle cx="430" cy="770" r="16"/>
+    <circle cx="130" cy="470" r="16"/>
+    <circle cx="730" cy="470" r="16"/>
+    <circle cx="218" cy="258" r="14"/>
+    <circle cx="642" cy="258" r="14"/>
+    <circle cx="218" cy="682" r="14"/>
+    <circle cx="642" cy="682" r="14"/>
+  </g>
+
+  <!-- mid gear -->
+  <circle cx="430" cy="470" r="200" fill="url(#gearBody)" stroke="#1a1e26" stroke-width="6"/>
+  <g fill="#232833">
+    <circle cx="430" cy="290" r="18"/>
+    <circle cx="430" cy="650" r="18"/>
+    <circle cx="250" cy="470" r="18"/>
+    <circle cx="610" cy="470" r="18"/>
+  </g>
+
+  <!-- inner hub -->
+  <circle cx="430" cy="470" r="115" fill="url(#gearBody)" stroke="#1a1e26" stroke-width="5"/>
+  <circle cx="430" cy="470" r="60" fill="#1a1e26"/>
+  <circle cx="430" cy="470" r="24" fill="#0d0f13"/>
+
+  <!-- teal accent ring segments -->
+  <path d="M290 350 A200 200 0 0 1 570 350" stroke="url(#teal)" stroke-width="10" fill="none" opacity="0.8"/>
+  <path d="M290 590 A200 200 0 0 0 570 590" stroke="#e0a83c" stroke-width="10" fill="none" opacity="0.8"/>
+
+  <!-- bolts around hub -->
+  <g fill="#0d0f13">
+    <circle cx="430" cy="400" r="8"/>
+    <circle cx="430" cy="540" r="8"/>
+    <circle cx="360" cy="470" r="8"/>
+    <circle cx="500" cy="470" r="8"/>
+  </g>
+
+  <!-- secondary small gear top right -->
+  <circle cx="660" cy="180" r="90" fill="url(#gearBody)" stroke="#1a1e26" stroke-width="4" opacity="0.9"/>
+  <circle cx="660" cy="180" r="34" fill="#1a1e26"/>
+  <g fill="#232833">
+    <circle cx="660" cy="110" r="10"/>
+    <circle cx="660" cy="250" r="10"/>
+    <circle cx="595" cy="180" r="10"/>
+    <circle cx="725" cy="180" r="10"/>
+  </g>
+
+  <ellipse cx="600" cy="250" rx="220" ry="140" fill="#4fd6d6" opacity="0.08"/>
+</svg>

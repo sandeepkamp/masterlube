@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 970" width="800" height="970">
+  <defs>
+    <linearGradient id="bgSteel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1614"/>
+      <stop offset="0.6" stop-color="#231d1a"/>
+      <stop offset="1" stop-color="#100d0c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.62" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#ff8a3d" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#e8531f" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#e8531f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pour" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2c9"/>
+      <stop offset="0.4" stop-color="#ffb547"/>
+      <stop offset="1" stop-color="#e8531f"/>
+    </linearGradient>
+    <linearGradient id="smoke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfd3d8" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#cfd3d8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="970" fill="url(#bgSteel)"/>
+
+  <!-- structural silhouette beams -->
+  <g fill="#0c0a09" opacity="0.85">
+    <rect x="0" y="0" width="60" height="500"/>
+    <rect x="720" y="0" width="80" height="560"/>
+    <rect x="0" y="120" width="800" height="30"/>
+    <polygon points="620,120 800,300 800,120"/>
+  </g>
+
+  <!-- glow -->
+  <ellipse cx="500" cy="520" rx="320" ry="300" fill="url(#glow)"/>
+
+  <!-- molten pour stream -->
+  <path d="M470 300 q10 120 0 260 q-6 60 20 100" stroke="url(#pour)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <ellipse cx="500" cy="660" rx="90" ry="26" fill="url(#pour)" opacity="0.9"/>
+
+  <!-- crucible / ladle silhouette -->
+  <path d="M360 280 L580 280 L560 340 L380 340 Z" fill="#241d19"/>
+  <rect x="350" y="255" width="240" height="30" rx="6" fill="#1a1512"/>
+
+  <!-- smoke plume -->
+  <ellipse cx="520" cy="140" rx="160" ry="90" fill="url(#smoke)"/>
+  <ellipse cx="440" cy="90" rx="120" ry="70" fill="url(#smoke)"/>
+
+  <!-- sparks -->
+  <g fill="#ffd27a">
+    <circle cx="540" cy="580" r="4"/>
+    <circle cx="565" cy="620" r="3"/>
+    <circle cx="480" cy="640" r="3"/>
+    <circle cx="600" cy="560" r="3"/>
+  </g>
+</svg>
