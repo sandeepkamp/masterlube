@@ -12,7 +12,7 @@
                 <p class="footer-text">{{ $footerText }}</p>
                 <div class="footer-social d-flex gap-2">
                     <a href="{{ $facebookUrl }}" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="{{ $twitterUrl }}" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="{{ $twitterUrl }}" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
                     <a href="{{ $instagramUrl }}" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>

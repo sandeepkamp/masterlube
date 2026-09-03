@@ -54,7 +54,7 @@
                 <div class="row g-3 mt-3">
                     <div class="col-sm-6">
                         <div class="d-flex gap-3">
-                            <div class="flex-shrink-0 bg-dark text-white rounded-3 p-2">
+                            <div class="flex-shrink-0 bg-dark text-white rounded-3 p-4">
                                 <i class="bi bi-shield-check"></i>
                             </div>
                             <div>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="d-flex gap-3">
-                            <div class="flex-shrink-0 bg-dark text-white rounded-3 p-2">
+                            <div class="flex-shrink-0 bg-dark text-white rounded-3 p-4">
                                 <i class="bi bi-speedometer2"></i>
                             </div>
                             <div>
