@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 970" width="800" height="970">
+  <defs>
+    <linearGradient id="bgMfg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12161f"/>
+      <stop offset="0.5" stop-color="#1b2130"/>
+      <stop offset="1" stop-color="#0b0e15"/>
+    </linearGradient>
+    <linearGradient id="arm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0b24a"/>
+      <stop offset="1" stop-color="#8a6a1f"/>
+    </linearGradient>
+    <linearGradient id="armDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4050"/>
+      <stop offset="1" stop-color="#1a1e28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="970" fill="url(#bgMfg)"/>
+
+  <!-- ceiling light beams -->
+  <g stroke="#f3d78a" stroke-width="10" opacity="0.5">
+    <line x1="120" y1="0" x2="120" y2="140"/>
+    <line x1="260" y1="0" x2="260" y2="140"/>
+    <line x1="540" y1="0" x2="540" y2="140"/>
+    <line x1="680" y1="0" x2="680" y2="140"/>
+  </g>
+  <rect x="0" y="130" width="800" height="6" fill="#f3d78a" opacity="0.4"/>
+
+  <!-- perspective floor grid -->
+  <g stroke="#3a4050" stroke-width="3" opacity="0.6">
+    <line x1="400" y1="450" x2="0" y2="970"/>
+    <line x1="400" y1="450" x2="800" y2="970"/>
+    <line x1="400" y1="450" x2="150" y2="970"/>
+    <line x1="400" y1="450" x2="650" y2="970"/>
+    <line x1="60" y1="700" x2="740" y2="700"/>
+    <line x1="0" y1="850" x2="800" y2="850"/>
+  </g>
+
+  <!-- left robotic arm -->
+  <g>
+    <rect x="150" y="140" width="26" height="220" fill="url(#armDark)"/>
+    <path d="M163 360 L340 480" stroke="url(#arm)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M340 480 L300 620" stroke="url(#armDark)" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="163" cy="360" r="22" fill="#e0b24a"/>
+    <circle cx="340" cy="480" r="18" fill="#e0b24a"/>
+    <circle cx="300" cy="620" r="14" fill="#8a6a1f"/>
+  </g>
+
+  <!-- right robotic arm (mirrored) -->
+  <g>
+    <rect x="624" y="140" width="26" height="220" fill="url(#armDark)"/>
+    <path d="M637 360 L460 480" stroke="url(#arm)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M460 480 L500 620" stroke="url(#armDark)" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="637" cy="360" r="22" fill="#e0b24a"/>
+    <circle cx="460" cy="480" r="18" fill="#e0b24a"/>
+    <circle cx="500" cy="620" r="14" fill="#8a6a1f"/>
+  </g>
+
+  <!-- conveyor / product line -->
+  <rect x="250" y="640" width="300" height="30" rx="4" fill="#2a3040"/>
+  <rect x="260" y="648" width="30" height="14" fill="#e0b24a" opacity="0.8"/>
+  <rect x="380" y="648" width="30" height="14" fill="#e0b24a" opacity="0.8"/>
+  <rect x="500" y="648" width="30" height="14" fill="#e0b24a" opacity="0.8"/>
+
+  <ellipse cx="400" cy="120" rx="260" ry="70" fill="#f3d78a" opacity="0.12"/>
+</svg>

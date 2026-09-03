@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 970" width="800" height="970">
+  <defs>
+    <linearGradient id="skyMine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a7358"/>
+      <stop offset="0.55" stop-color="#6b5947"/>
+      <stop offset="1" stop-color="#3c3229"/>
+    </linearGradient>
+    <radialGradient id="dust" cx="0.7" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#c9a876" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#c9a876" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2521"/>
+      <stop offset="1" stop-color="#100d0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="970" fill="url(#skyMine)"/>
+  <rect width="800" height="970" fill="url(#dust)"/>
+
+  <!-- distant machinery silhouette -->
+  <rect x="520" y="120" width="10" height="160" fill="#2c261f" opacity="0.5"/>
+  <rect x="500" y="110" width="60" height="14" fill="#2c261f" opacity="0.5"/>
+  <polygon points="500,110 480,150 560,150 540,110" fill="#2c261f" opacity="0.4"/>
+
+  <!-- ground -->
+  <rect x="0" y="640" width="800" height="330" fill="#4a3d2f"/>
+  <rect x="0" y="640" width="800" height="40" fill="#5b4c3a" opacity="0.7"/>
+
+  <!-- big wheel 1 -->
+  <circle cx="230" cy="690" r="230" fill="url(#tire)"/>
+  <circle cx="230" cy="690" r="230" fill="none" stroke="#3d352c" stroke-width="10"/>
+  <circle cx="230" cy="690" r="150" fill="none" stroke="#1c1815" stroke-width="26"/>
+  <circle cx="230" cy="690" r="95" fill="#3a332c"/>
+  <circle cx="230" cy="690" r="55" fill="#1c1815"/>
+  <circle cx="230" cy="690" r="18" fill="#0a0806"/>
+
+  <!-- big wheel 2 (partial, behind) -->
+  <circle cx="600" cy="700" r="210" fill="url(#tire)" opacity="0.92"/>
+  <circle cx="600" cy="700" r="135" fill="none" stroke="#1c1815" stroke-width="24"/>
+  <circle cx="600" cy="700" r="85" fill="#3a332c"/>
+  <circle cx="600" cy="700" r="48" fill="#1c1815"/>
+
+  <!-- tread marks on tire 1 -->
+  <g stroke="#0d0b09" stroke-width="6" opacity="0.6">
+    <line x1="80" y1="560" x2="110" y2="600"/>
+    <line x1="60" y1="640" x2="95" y2="660"/>
+    <line x1="60" y1="740" x2="95" y2="730"/>
+    <line x1="90" y1="820" x2="120" y2="790"/>
+    <line x1="160" y1="880" x2="175" y2="840"/>
+  </g>
+
+  <!-- warm light glow -->
+  <ellipse cx="620" cy="200" rx="180" ry="90" fill="#e8b25a" opacity="0.18"/>
+
+  <!-- bottom darken for legibility handled in CSS overlay -->
+</svg>

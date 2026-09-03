@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgAcc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dfe2e6"/>
+      <stop offset="1" stop-color="#eef0f2"/>
+    </linearGradient>
+    <linearGradient id="ctrlBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3f47"/>
+      <stop offset="1" stop-color="#1c1f24"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd1ff"/>
+      <stop offset="1" stop-color="#3a8fc7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgAcc)"/>
+
+  <!-- pegboard pattern (right side) -->
+  <g fill="#b9bec4">
+    <g id="dotrow"></g>
+  </g>
+  <g fill="#c7ccd1">
+    <!-- generate dot grid manually -->
+    <g>
+      <rect x="700" y="0" width="500" height="630" fill="#d7dade"/>
+    </g>
+  </g>
+  <g fill="#aeb3b9" opacity="0.8">
+    <circle cx="740" cy="60" r="6"/><circle cx="800" cy="60" r="6"/><circle cx="860" cy="60" r="6"/><circle cx="920" cy="60" r="6"/><circle cx="980" cy="60" r="6"/><circle cx="1040" cy="60" r="6"/><circle cx="1100" cy="60" r="6"/><circle cx="1160" cy="60" r="6"/>
+    <circle cx="740" cy="120" r="6"/><circle cx="800" cy="120" r="6"/><circle cx="860" cy="120" r="6"/><circle cx="920" cy="120" r="6"/><circle cx="980" cy="120" r="6"/><circle cx="1040" cy="120" r="6"/><circle cx="1100" cy="120" r="6"/><circle cx="1160" cy="120" r="6"/>
+    <circle cx="740" cy="180" r="6"/><circle cx="800" cy="180" r="6"/><circle cx="860" cy="180" r="6"/><circle cx="920" cy="180" r="6"/><circle cx="980" cy="180" r="6"/><circle cx="1040" cy="180" r="6"/><circle cx="1100" cy="180" r="6"/><circle cx="1160" cy="180" r="6"/>
+    <circle cx="740" cy="240" r="6"/><circle cx="800" cy="240" r="6"/><circle cx="860" cy="240" r="6"/><circle cx="920" cy="240" r="6"/><circle cx="980" cy="240" r="6"/><circle cx="1040" cy="240" r="6"/><circle cx="1100" cy="240" r="6"/><circle cx="1160" cy="240" r="6"/>
+    <circle cx="740" cy="300" r="6"/><circle cx="800" cy="300" r="6"/><circle cx="860" cy="300" r="6"/><circle cx="920" cy="300" r="6"/><circle cx="980" cy="300" r="6"/><circle cx="1040" cy="300" r="6"/><circle cx="1100" cy="300" r="6"/><circle cx="1160" cy="300" r="6"/>
+    <circle cx="740" cy="360" r="6"/><circle cx="800" cy="360" r="6"/><circle cx="860" cy="360" r="6"/><circle cx="920" cy="360" r="6"/><circle cx="980" cy="360" r="6"/><circle cx="1040" cy="360" r="6"/><circle cx="1100" cy="360" r="6"/><circle cx="1160" cy="360" r="6"/>
+    <circle cx="740" cy="420" r="6"/><circle cx="800" cy="420" r="6"/><circle cx="860" cy="420" r="6"/><circle cx="920" cy="420" r="6"/><circle cx="980" cy="420" r="6"/><circle cx="1040" cy="420" r="6"/><circle cx="1100" cy="420" r="6"/><circle cx="1160" cy="420" r="6"/>
+    <circle cx="740" cy="480" r="6"/><circle cx="800" cy="480" r="6"/><circle cx="860" cy="480" r="6"/><circle cx="920" cy="480" r="6"/><circle cx="980" cy="480" r="6"/><circle cx="1040" cy="480" r="6"/><circle cx="1100" cy="480" r="6"/><circle cx="1160" cy="480" r="6"/>
+    <circle cx="740" cy="540" r="6"/><circle cx="800" cy="540" r="6"/><circle cx="860" cy="540" r="6"/><circle cx="920" cy="540" r="6"/><circle cx="980" cy="540" r="6"/><circle cx="1040" cy="540" r="6"/><circle cx="1100" cy="540" r="6"/><circle cx="1160" cy="540" r="6"/>
+  </g>
+
+  <!-- small secondary device left -->
+  <rect x="100" y="360" width="140" height="110" rx="8" fill="#c8ccd0" stroke="#9aa0a8" stroke-width="2"/>
+  <rect x="118" y="378" width="60" height="30" rx="3" fill="#333"/>
+
+  <!-- wires -->
+  <path d="M420 260 q60 120 -20 200" stroke="#3a7bd5" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M460 250 q100 90 40 230" stroke="#e0b400" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M500 240 q140 40 120 240" stroke="#8f97a0" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- main controller body -->
+  <rect x="380" y="150" width="240" height="340" rx="14" fill="url(#ctrlBody)"/>
+  <rect x="404" y="180" width="192" height="130" rx="6" fill="url(#screen)"/>
+  <g fill="#0d2b3d" font-family="Consolas, monospace" font-size="16">
+    <text x="416" y="205">FLOW RATE   12.4ML</text>
+    <text x="416" y="228">FLOW LINE   OK</text>
+    <text x="416" y="251">PRESSURE   5.3 BAR</text>
+    <text x="416" y="274">TEMP        47C</text>
+    <text x="416" y="297">STATUS     LUBRICATING</text>
+  </g>
+
+  <!-- buttons -->
+  <circle cx="430" cy="340" r="14" fill="#565c65"/>
+  <circle cx="470" cy="340" r="14" fill="#565c65"/>
+  <circle cx="510" cy="340" r="14" fill="#565c65"/>
+
+  <!-- vent lines -->
+  <line x1="404" y1="380" x2="596" y2="380" stroke="#4a4f57" stroke-width="4"/>
+  <line x1="404" y1="400" x2="596" y2="400" stroke="#4a4f57" stroke-width="4"/>
+  <line x1="404" y1="420" x2="596" y2="420" stroke="#4a4f57" stroke-width="4"/>
+
+  <!-- side connector box -->
+  <rect x="610" y="260" width="60" height="160" rx="6" fill="#c8ccd0" stroke="#9aa0a8" stroke-width="2"/>
+  <circle cx="640" cy="290" r="6" fill="#3a7bd5"/>
+  <circle cx="640" cy="320" r="6" fill="#e0b400"/>
+  <circle cx="640" cy="350" r="6" fill="#c0392b"/>
+  <circle cx="640" cy="380" r="6" fill="#3a3a3a"/>
+</svg>
